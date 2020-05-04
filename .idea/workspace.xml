@@ -212,7 +212,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1588612425806</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Todo db">
+      <created>1588612553586</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1588612553586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -248,10 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="62" key="#run_(2)/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588069729401" />
-    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588612425226">
+    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588612553114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588612425226" />
+    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588612553114" />
     <state width="930" height="264" key="GridCell.Tab.0.bottom" timestamp="1588180395406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
