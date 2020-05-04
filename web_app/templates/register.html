@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block form %}
+<form method="POST" action="" >
+<div class="alert alert-info" role="alert"> Register an account.</div>
+    {{ form.hidden_tag() }}
+    <small id="passwordHelpBlock" class="form-text text-muted">
+        Username and password must be 8-25 characters long.</small><br>
+
+    <p>{{ form.username.label }} {{ form.username }}
+      {{ form.confirm_username.label }}  {{ form.confirm_username }}</p>
+
+        {% for error in form.username.errors and form.confirm_username.errors %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div><br>
+         {% endfor %}
+
+     <p>{{ form.password.label }} {{ form.password }}
+        {{ form.confirm_password.label }} {{ form.confirm_password }}</p>
+
+          {% for error in form.password.errors and form.confirm_password.errors %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div>
+         {% endfor %}
+
+   <p>{{ form.mail.label }} {{ form.mail }}
+        {{ form.confirm_mail.label }} {{ form.confirm_mail }}</p>
+
+    {% for error in form.mail.errors and form.confirm_mail.errors %}
+    <div class="alert alert-danger" role="alert">{{ error }} </div>
+         {% endfor %}
+
+
+    <p>{{ form.submit(class="btn btn-outline-info") }}</p>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already have an account? <a class="ml-2" href="{{ url_for('login')}}">Login here
+        </small>
+    </div>
+</form>
+{% endblock form %}
+
+
+<footer style="position: bottom" id="footer">  </footer>

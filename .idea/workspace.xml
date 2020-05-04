@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aziuOu56zONj8pijIXKeSibMYG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PythonProgramming\ToDo\images" />
+      <recent name="C:\PythonProgramming\ToDo\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/forms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="routes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/routes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToDo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\PythonProgramming\ToDo\web_app\run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.routes" />
+        <item itemvalue="Python.forms" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.run (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="" />
+      <created>1587745044754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587745044754</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="97" key="#Notifications" timestamp="1588406102546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="97" key="#Notifications/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588406102546" />
+    <state x="655" y="302" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588006892190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="302" key="#com.intellij.fileTypes.FileTypeChooser/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588006892190" />
+    <state x="627" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588530483697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588530483697" />
+    <state x="610" y="62" key="#routes" timestamp="1588407329730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="62" key="#routes/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588407329730" />
+    <state x="610" y="62" key="#run" timestamp="1588407357210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="62" key="#run/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588407357210" />
+    <state x="610" y="62" key="#run_(2)" timestamp="1588069729401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="62" key="#run_(2)/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588069729401" />
+    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588339977862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588339977862" />
+    <state width="930" height="264" key="GridCell.Tab.0.bottom" timestamp="1588180395406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="930" height="264" key="GridCell.Tab.0.bottom/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588180395406" />
+    <state width="930" height="264" key="GridCell.Tab.0.center" timestamp="1588180395406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="930" height="264" key="GridCell.Tab.0.center/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588180395406" />
+    <state width="930" height="264" key="GridCell.Tab.0.left" timestamp="1588180395405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="930" height="264" key="GridCell.Tab.0.left/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588180395405" />
+    <state width="930" height="264" key="GridCell.Tab.0.right" timestamp="1588180395406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="930" height="264" key="GridCell.Tab.0.right/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588180395406" />
+    <state width="931" height="328" key="GridCell.Tab.1.bottom" timestamp="1588031337852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="1893" height="331" key="GridCell.Tab.1.bottom/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587748014207" />
+    <state width="931" height="328" key="GridCell.Tab.1.center" timestamp="1588031337852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="1893" height="331" key="GridCell.Tab.1.center/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587748014207" />
+    <state width="931" height="328" key="GridCell.Tab.1.left" timestamp="1588031337852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="1893" height="331" key="GridCell.Tab.1.left/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587748014207" />
+    <state width="931" height="328" key="GridCell.Tab.1.right" timestamp="1588031337852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="931" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
+    <state width="1893" height="331" key="GridCell.Tab.1.right/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587748014207" />
+    <state x="630" y="107" key="SettingsEditor" timestamp="1588356512944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="630" y="107" key="SettingsEditor/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588356512944" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1588335472875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="623" height="498" key="SwitcherDM/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588335472875" />
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1588579859059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588021967934" />
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588579859059" />
+    <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588339972252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588339972252" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1588585993078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1588021480516" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588585993078" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1588321201205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588321201205" />
+    <state x="86" y="12" width="787" height="1023" key="find.popup" timestamp="1588005378802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="86" y="12" width="787" height="1023" key="find.popup/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588005378802" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1588527817969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588527817969" />
+  </component>
+</project>

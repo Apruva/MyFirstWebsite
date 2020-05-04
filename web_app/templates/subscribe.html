@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block h1 %}<h1 id="main-h1" xmlns="http://www.w3.org/1999/html"><strong>Our Newsletter</strong></h1>{%endblock h1 %}
+{% block paragraph %}
+<p id="main-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+{% endblock paragraph %}
+
+{% block form %}
+<form method="POST" action="" >
+    <div class="alert alert-info" role="alert"> Register email to get notified!</div>
+    {{ form.hidden_tag() }}
+    <small id="passwordHelpBlock" class="form-text text-muted">
+        Password must be 5-25 characters long.
+</small><br>
+    <p>{{ form.email.label }}
+         {{ form.email }}</p><br>
+ {% for error in form.email.error %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div>
+         {% endfor %}
+    <p>{{ form.confirm_email.label }}
+        {{ form.confirm_email }}</p><br>
+     {% for error in form.confirm_email.error %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div>
+         {% endfor %}
+
+    <p>{{ form.submit() }}</p>
+
+</form>
+{% endblock form %}
+
+
+
+<footer style="position: bottom" id="footer">  </footer>

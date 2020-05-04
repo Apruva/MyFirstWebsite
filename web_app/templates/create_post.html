@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block h1 %} <h1 id="main-h1"> Welcome, {{ current_user.username }} </h1> {% endblock h1 %}
+
+{% block form %}
+<form method="POST" action="" id="form-post">
+<div class="alert alert-info" role="alert"> Create new post</div>
+    {{ form.hidden_tag() }}
+
+    <p>{{ form.title.label }} {{ form.title}}</p>
+        {% for error in form.title.errors %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div><br>
+         {% endfor %}
+     <p>{{ form.content.label }} {{ form.content }}</p>
+    {% for error in form.content.errors %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div><br>
+         {% endfor %}
+    <p>{{ form.submit(class="btn btn-outline-info") }}</p></form>
+{% endblock form %}
+
+<footer style="position: bottom" id="footer">  </footer>

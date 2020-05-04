@@ -1,0 +1,22 @@
+
+	# Delete tables from DB
+python
+db_subs.drop_all()
+db_users.drop_all()
+
+	# Delete db file in cmd
+"del my.db" 
+
+	# Imports
+from web_app import db_subs, db_users
+from web_app.models import Users, Subscribers
+
+	# Create tables
+db_subs.create_all()
+db_users.create_all()
+
+	# Queries for testing
+sub = Subscribers.query.get(1)
+sub, sub.id, sub.email, sub.date_sub
+usr = Users.query.get(1)
+usr, usr.id, usr.username, usr.password, usr.mail, usr.date_reg
