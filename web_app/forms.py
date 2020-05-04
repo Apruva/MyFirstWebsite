@@ -1,4 +1,4 @@
-from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField
+from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, IntegerField
 from wtforms.validators import ValidationError, DataRequired, EqualTo
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
@@ -110,4 +110,8 @@ class PostForm(FlaskForm):
     submit = SubmitField('Submit Post')
 
 
+class TodoForm(FlaskForm):
+    comment = StringField('Comment', validators=[DataRequired()])
+    date_due = IntegerField('Date Due', validators=[DataRequired()])
+    submit = SubmitField('Add Todo')
 

@@ -1,7 +1,7 @@
-from flask import render_template, redirect, request, url_for, flash, abort
+from flask import render_template, redirect, request, url_for, flash
 from web_app import app, db, bcrypt, date_now
-from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm
-from web_app.models import Subscribers, Users, Post
+from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm
+from web_app.models import Subscribers, Users, Post, Todo
 from flask_login import login_user, current_user, logout_user, login_required
 import secrets
 import os
@@ -26,6 +26,15 @@ def all_posts():
 #def post(post_id):
 #    post = Post.query.get_or_404(post_id)
 #    return render_template('posts.html', title=post.title, post=post)
+
+
+@app.route("/account/todo", methods=["GET", "POST"])
+@login_required
+def todo_func():
+    form = TodoForm()
+    if form.validate_on_submit():
+        todo = Todo(comment=form.comment.data, date_due=form.date_due)
+        return render_template("todo.html", date_now=date_now, title="Todo", form=form)
 
 
 @app.route("/post/new", methods=["GET", "POST"])

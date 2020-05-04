@@ -46,6 +46,7 @@ class Todo(db.Model):
     comment = db.Column(db.Text, nullable=False)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     date_due = db.Column(db.Integer, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
-        return f"Todo('{self.comment}')"
+        return f"Todo('{self.comment}', '{self.date_due}')"

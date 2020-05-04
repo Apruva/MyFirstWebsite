@@ -4,7 +4,10 @@
     <list default="true" id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +205,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1588601882653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Todo db">
+      <created>1588609507935</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1588609507936</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -210,7 +219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="blog work" />
-    <option name="LAST_COMMIT_MESSAGE" value="blog work" />
+    <MESSAGE value="Todo db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todo db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="97" key="#Notifications" timestamp="1588406102546">
@@ -237,10 +247,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="62" key="#run_(2)/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588069729401" />
-    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588601882229">
+    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588612413808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588601882229" />
+    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588612413808" />
     <state width="930" height="264" key="GridCell.Tab.0.bottom" timestamp="1588180395406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -311,9 +321,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="86" y="12" width="787" height="1023" key="find.popup/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588005378802" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1588527817969">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1588610600387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588527817969" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588610600387" />
   </component>
 </project>
