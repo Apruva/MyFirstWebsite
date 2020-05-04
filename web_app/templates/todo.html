@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block h1 %} <h1 id="main-hd"> {{ current_user.mail }} 's Todo List</h1> {% endblock h1 %}
+
+{% block form %}
+    <form method="POST" action="" enctype="multipart/form-data" >
+        <div class="alert alert-info" role="alert"></div>
+            {{ form.hidden_tag() }}
+
+                <p>{% form.comment.label %}</p><p>{% form.comment %}</p>
+                        {% for error in form.comment.errors %}
+                            <div class="alert alert-danger" role="alert">{{ error }}</div>
+                         {% endfor %}
+
+                <p>{% form.date_due.label %}</p><p>{% form.date_due %}</p>
+                        {% for error in form.date_due.errors %}
+                            <div class="alert alert-danger" role="alert">{{ error }}</div>
+                        {% endfor %}
+
+                <p>{{ form.submit(class="btn btn-outline-info") }}</p>
+
+    </form>
+{% endblock form %}
+
+
