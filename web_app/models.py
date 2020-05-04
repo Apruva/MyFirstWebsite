@@ -40,3 +40,12 @@ class Post(db.Model):
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
 
+
+class Todo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    comment = db.Column(db.Text, nullable=False)
+    date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    date_due = db.Column(db.Integer, nullable=False)
+
+    def __repr__(self):
+        return f"Todo('{self.comment}')"

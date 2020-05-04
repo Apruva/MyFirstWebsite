@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="" />
+    <list default="true" id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,10 +190,27 @@
       <option name="presentableId" value="Default" />
       <updated>1587745044754</updated>
     </task>
+    <task id="LOCAL−00001" summary="blog work">
+      <created>1588601849059</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1588601849059</updated>
+    </task>
+    <task id="LOCAL−00002" summary="blog work">
+      <created>1588601882653</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1588601882653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="blog work" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="97" key="#Notifications" timestamp="1588406102546">
@@ -216,10 +237,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="62" key="#run_(2)/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588069729401" />
-    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588601848560">
+    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588601882229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588601848560" />
+    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588601882229" />
     <state width="930" height="264" key="GridCell.Tab.0.bottom" timestamp="1588180395406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,28 +281,28 @@
     </state>
     <state width="931" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
     <state width="1893" height="331" key="GridCell.Tab.1.right/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587748014207" />
-    <state x="630" y="107" key="SettingsEditor" timestamp="1588356512944">
+    <state x="630" y="107" key="SettingsEditor" timestamp="1588609118097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="630" y="107" key="SettingsEditor/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588356512944" />
+    <state x="630" y="107" key="SettingsEditor/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588609118097" />
     <state width="623" height="498" key="SwitcherDM" timestamp="1588335472875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="623" height="498" key="SwitcherDM/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588335472875" />
-    <state x="567" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1588579859059">
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1588608936409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588021967934" />
-    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588579859059" />
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588608936409" />
     <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588601861936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588601861936" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1588585993078">
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1588608938436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1588021480516" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588585993078" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588608938436" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1588321201205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
