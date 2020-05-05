@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block h1 %}<h1 id="main-h1"><small>{{ current_user.mail }} Todo's</small></h1>{% endblock h1 %}
+
+{% block content %}
+{% for todo in todos %}
+<br>
+<div id="todo-p"> ID : {{ todo.id }} </div>
+<div id="todo-p"> Priority : {{ todo.priority }} </div>
+<div id="todo-p"> Comment : {{ todo.comment }} </div>
+<div id="todo-p"> Created : {{ todo.date_created.strftime('%H:%M:%S - %Y/%m/%m') }}</div>
+{% endfor %}
+{% endblock content %}

@@ -1,25 +1,24 @@
 {% extends "layout.html" %}
-
-{% block h1 %} <h1 id="main-hd"> {{ current_user.mail }} 's Todo List</h1> {% endblock h1 %}
-
+{% block h1 %}<h1 id="main-h1">Todo List</h1>{% endblock h1 %}
 {% block form %}
-    <form method="POST" action="" enctype="multipart/form-data" >
-        <div class="alert alert-info" role="alert"></div>
+<form method="POST" id="form-todo" action="">
+        <div class="alert alert-info" role="alert"> Welcome {{ current_user.mail }}! <br>Create a personal to-do</div>
             {{ form.hidden_tag() }}
 
-                <p>{% form.comment.label %}</p><p>{% form.comment %}</p>
+    <p>{{ form.comment.label }}</p><p>{{ form.comment(cols="55", rows="5") }}</p>
                         {% for error in form.comment.errors %}
                             <div class="alert alert-danger" role="alert">{{ error }}</div>
                          {% endfor %}
 
-                <p>{% form.date_due.label %}</p><p>{% form.date_due %}</p>
-                        {% for error in form.date_due.errors %}
+    <p>{{ form.priority.label }}</p><p>{{ form.priority }}</p>
+                        {% for error in form.priority.errors %}
                             <div class="alert alert-danger" role="alert">{{ error }}</div>
                         {% endfor %}
 
-                <p>{{ form.submit(class="btn btn-outline-info") }}</p>
 
-    </form>
+                <br><br><p>{{ form.submit(class="btn btn-outline-info") }}</p>
+</form>
 {% endblock form %}
 
 
+<footer style="position: bottom" id="footer">  </footer>

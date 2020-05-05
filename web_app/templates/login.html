@@ -8,15 +8,11 @@
     {{ form.hidden_tag() }}
     <p>{{ form.mail.label }}</p><p>{{ form.mail }}</p>
 
-        {% for error in form.mail.errors %}
-    <div class="alert alert-danger" role="alert">{{ error }}</div>
-         {% endfor %}
+
 
     <p>{{ form.password.label }}</p><p>{{ form.password }}</p>
 
-          {% for error in form.password.errors %}
-    <div class="alert alert-danger" role="alert">{{ error }}</div>
-         {% endfor %}
+
 
     <p>{{ form.submit(class="btn btn-outline-info") }}</p>
 

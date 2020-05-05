@@ -3,10 +3,10 @@ from web_app import app, db, bcrypt, date_now
 from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm
 from web_app.models import Subscribers, Users, Post, Todo
 from flask_login import login_user, current_user, logout_user, login_required
-import secrets
+import secrets, re
 import os
 from PIL import Image
-import datetime
+from datetime import datetime, timedelta
 
 
 @app.route("/")
@@ -28,13 +28,28 @@ def all_posts():
 #    return render_template('posts.html', title=post.title, post=post)
 
 
-@app.route("/account/todo", methods=["GET", "POST"])
+@app.route("/todo/all")
+@login_required
+def todo_all():
+    if current_user.is_authenticated:
+        todos = Todo.query.all()
+        return render_template("all_todos.html", todos=todos, date_now=date_now, title="My Todos")
+
+
+@app.route("/todo", methods=["GET", "POST"])
 @login_required
 def todo_func():
     form = TodoForm()
     if form.validate_on_submit():
-        todo = Todo(comment=form.comment.data, date_due=form.date_due)
-        return render_template("todo.html", date_now=date_now, title="Todo", form=form)
+        todo = Todo(comment=form.comment.data, priority=form.priority.data, mail=current_user)  # takes comment and prio + users email
+        db.session.add(todo)
+        db.session.commit()
+        flash("Todo created!", "success")
+        return redirect(url_for('todo_func'))
+    #elif request.method == "GET":
+        #return redirect(url_for("all_todos"))
+    return render_template("todo.html", date_now=date_now, title="Todo", form=form)
+
 
 
 @app.route("/post/new", methods=["GET", "POST"])

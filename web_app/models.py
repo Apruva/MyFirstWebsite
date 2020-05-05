@@ -25,6 +25,7 @@ class Users(db.Model, UserMixin):
     mail = db.Column(db.String(120), unique=True, nullable=False)
     image_file = db.Column(db.String(20), nullable=False, default='default.png')
     post = db.relationship('Post', backref='author', lazy=True)
+    todo = db.relationship('Todo', backref='mail', lazy=True)
 
     def __repr__(self):
         return f"Users('{self.username}', '{self.mail}')"
@@ -34,7 +35,7 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.Text, nullable=False)
-    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.now)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
@@ -44,9 +45,9 @@ class Post(db.Model):
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     comment = db.Column(db.Text, nullable=False)
-    date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    date_due = db.Column(db.Integer, nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    date_created = db.Column(db.DateTime, nullable=False, default=datetime.now)
+    priority = db.Column(db.String, nullable=False)
+    todo_mail = db.Column(db.String, db.ForeignKey('users.mail'))
 
     def __repr__(self):
-        return f"Todo('{self.comment}', '{self.date_due}')"
+        return f"Todo('{self.comment}', '{self.priority}')"

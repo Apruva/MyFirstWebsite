@@ -1,4 +1,6 @@
-from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, IntegerField
+from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, TextField, DateField, IntegerField, SelectMultipleField
+from wtforms.fields.html5 import DateTimeField
+from wtforms.widgets import TextArea
 from wtforms.validators import ValidationError, DataRequired, EqualTo
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
@@ -111,7 +113,12 @@ class PostForm(FlaskForm):
 
 
 class TodoForm(FlaskForm):
-    comment = StringField('Comment', validators=[DataRequired()])
-    date_due = IntegerField('Date Due', validators=[DataRequired()])
-    submit = SubmitField('Add Todo')
+    comment = TextAreaField('Comment',
+                            validators=[DataRequired(), validators.length(min=5)], default="To-do message", widget=TextArea())
+    priority = StringField('Priority (low-high)',
+                           validators=[DataRequired()], default="None")
+    submit = SubmitField('Add to-do')
+
+
+
 
