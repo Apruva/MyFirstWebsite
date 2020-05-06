@@ -3,10 +3,9 @@ from web_app import app, db, bcrypt, date_now
 from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm
 from web_app.models import Subscribers, Users, Post, Todo
 from flask_login import login_user, current_user, logout_user, login_required
-import secrets, re
+import secrets
 import os
 from PIL import Image
-from datetime import datetime, timedelta
 
 
 @app.route("/")
@@ -19,13 +18,6 @@ def home():
 def all_posts():
     posts = Post.query.all()
     return render_template("posts.html", date_now=date_now, posts=posts, title="Posts")
-
-
-#href="{{ url_for('post', post_id=post.id) }}"> --- posts.html with url_for ID
-#@app.route("/posts/<int:post_id>")
-#def post(post_id):
-#    post = Post.query.get_or_404(post_id)
-#    return render_template('posts.html', title=post.title, post=post)
 
 
 @app.route("/todo/all")
@@ -46,10 +38,7 @@ def todo_func():
         db.session.commit()
         flash("Todo created!", "success")
         return redirect(url_for('todo_func'))
-    #elif request.method == "GET":
-        #return redirect(url_for("all_todos"))
     return render_template("todo.html", date_now=date_now, title="Todo", form=form)
-
 
 
 @app.route("/post/new", methods=["GET", "POST"])
