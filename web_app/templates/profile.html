@@ -1,13 +1,16 @@
 {% extends "layout.html" %}
+
 {% block h1 %}
 <div class="media" xmlns="http://www.w3.org/1999/html">
     <img class="rounded-circle account-img" src="{{ image_file }}">
     <div class="media-body">
-      <h2 class="account-heading">{{ current_user.username }}</h2>
-      <p class="text-secondary">Email: {{ current_user.mail }}</p>
+      <h2 class="account-heading" id="profile">{{ current_user.username }}</h2>
+      <p id="profile">Email: {{ current_user.mail }}</p>
     </div>
   </div>
+{% endblock h1 %}
 
+{% block paragraph %}
 <form method="POST" action="" id="form-change" enctype="multipart/form-data">
 <div class="alert alert-info" role="alert"> Update Profile</div>
     {{ form.hidden_tag() }}
@@ -34,7 +37,7 @@
 
     <p>{{ form.submit(class="btn btn-outline-info") }}</p>
 </form>
-{% endblock h1 %}
+{% endblock paragraph %}}
 
 
 <footer style="position: bottom" id="footer">  </footer>

@@ -6,11 +6,11 @@
 <div class="alert alert-info" role="alert"> Create new post</div>
     {{ form.hidden_tag() }}
 
-    <p>{{ form.title.label }} {{ form.title}}</p>
+    <p>{{ form.title.label }}</p><p>{{ form.title}}</p>
         {% for error in form.title.errors %}
     <div class="alert alert-danger" role="alert">{{ error }}</div><br>
          {% endfor %}
-     <p>{{ form.content.label }} {{ form.content }}</p>
+    <p>{{ form.content.label }}</p><p>{{ form.content(cols="55", rows="5") }}</p>
     {% for error in form.content.errors %}
     <div class="alert alert-danger" role="alert">{{ error }}</div><br>
          {% endfor %}

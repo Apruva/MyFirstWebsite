@@ -36,7 +36,7 @@ def todo_all():
         return render_template("all_todos.html", todos=todos, date_now=date_now, title="My Todos")
 
 
-@app.route("/todo", methods=["GET", "POST"])
+@app.route("/todo/", methods=["GET", "POST"])
 @login_required
 def todo_func():
     form = TodoForm()

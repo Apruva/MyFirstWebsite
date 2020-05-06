@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
-{% block h1 %}<h1 id="main-h1">Todo List</h1>{% endblock h1 %}
+{% block h1 %}<h1 id="main-h1">ToDo Page</h1>{% endblock h1 %}
+
 {% block form %}
 <form method="POST" id="form-todo" action="">
         <div class="alert alert-info" role="alert"> Welcome {{ current_user.mail }}! <br>Create a personal to-do</div>
@@ -17,8 +18,12 @@
 
 
                 <br><br><p>{{ form.submit(class="btn btn-outline-info") }}</p>
+    <div class="alert alert-info" role="alert">
+   <a href="{{ url_for('todo_all') }}" class="alert-link">Click here to view todo's of {{ current_user.mail }}!</a>
+</div>
 </form>
 {% endblock form %}
+
 
 
 <footer style="position: bottom" id="footer">  </footer>
