@@ -1,4 +1,5 @@
-from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, TextField, DateField, IntegerField, SelectMultipleField
+from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, TextField, DateField, \
+    IntegerField, SelectMultipleField
 from wtforms.fields.html5 import DateTimeField
 from wtforms.widgets import TextArea
 from wtforms.validators import ValidationError, DataRequired, EqualTo
@@ -19,7 +20,6 @@ class SubForm(FlaskForm):
                                             EqualTo("email", message="Email must match!")])
 
     submit = SubmitField("Subscribe")
-
 
     def validate_email(self, email):
         user = Subscribers.query.filter_by(email=email.data).first()
@@ -59,7 +59,6 @@ class RegForm(FlaskForm):
                                            EqualTo("mail", message="Email must match!")])
 
     submit = SubmitField("Register")
-
 
     def validate_username(self, username):
         username = Users.query.filter_by(username=username.data).first()
@@ -114,11 +113,19 @@ class PostForm(FlaskForm):
 
 class TodoForm(FlaskForm):
     comment = TextAreaField('Comment',
-                            validators=[DataRequired(), validators.length(min=5)], default="To-do message", widget=TextArea())
+                            validators=[DataRequired(), validators.length(min=5)], default="To-do message",
+                            widget=TextArea())
     priority = StringField('Priority (low-high)',
                            validators=[DataRequired()], default="None")
     submit = SubmitField('Add to-do')
 
 
-
-
+class RatesForm(FlaskForm):
+    rate = StringField('Currency',
+                       validators=[DataRequired(),
+                                   validators.length(min=3, max=3, message='Must be three characters!')], default='NOK')
+    base = StringField('Base Currency',
+                       validators=[DataRequired(),
+                                   validators.length(min=3, max=3, message='Must be three characters!')],
+                       default='EUR')
+    submit = SubmitField('Get Rate')

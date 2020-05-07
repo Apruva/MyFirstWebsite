@@ -29,12 +29,6 @@
     border-color: red;
 
     }
-    a:hover {
-  color: green;
-  text-decoration: underline overline;
-}
-
-
 
     #main-h1{
         text-align: center;
@@ -67,6 +61,7 @@
       border: 3px;
       color: black;
       background: white;
+      text-align: center;
 }
     form {
       text-align: center;
@@ -220,6 +215,9 @@ input[type=text] {
         <li class="nav-item">
         <a class="nav-link" href="{{ url_for('new_post') }}">New Post</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('exchange') }}">Exchange Rates</a>
+      </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Options
@@ -242,6 +240,9 @@ input[type=text] {
       </li>
        <li class="nav-item">
         <a class="nav-link" href="{{ url_for('subscribe') }}">Subscribe</a>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('exchange') }}">Exchange Rates</a>
+      </li>
 
          <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

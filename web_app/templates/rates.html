@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block h1 %}<h1 id="main-h1">Exchange Rates from European Central Bank</h1>{%endblock h1 %}
+
+{% block form %}
+<form method="POST" id="form-todo" action="">
+        <div class="alert alert-info" role="alert">
+            {% if current_user.is_authenticated %}
+            Welcome {{ current_user.mail }}!<br>Get Live Exchange Rates</div>
+            {% else %}
+            <br>Get Live Exchange Rates</div>
+            {% endif %}
+            {{ form.hidden_tag() }}
+
+    <br><p>{{ form.rate.label }}<br>{{ form.rate }}</p><br>
+                        {% for error in form.rate.errors %}
+                            <div class="alert alert-danger" role="alert">{{ error }}</div>
+                         {% endfor %}
+
+    <p>{{ form.base.label }}<br>{{ form.base }}</p>
+    <p>To quote against a different currency, change the base</p>
+                        {% for error in form.base.errors %}
+                            <div class="alert alert-danger" role="alert">{{ error }}</div>
+                         {% endfor %}
+
+                <br><p>{{ form.submit(class="btn btn-outline-info") }}</p>
+
+    {% if form.validate_on_submit() %}
+
+        <p id="main-p"> Exchange rates for <strong>{{ value }}</strong> is <strong>{{ currency }}</strong>.</p>
+        <p id="main-p"> It was last updated at <strong>{{ dt }}</strong> and checked against <strong>{{ base }}</strong>.</p>
+    {% else%}
+    {% endif %}
+</form>
+
+{% endblock form %}
+

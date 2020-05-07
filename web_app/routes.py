@@ -1,11 +1,30 @@
 from flask import render_template, redirect, request, url_for, flash
 from web_app import app, db, bcrypt, date_now
-from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm
+from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm, RatesForm, ValidationError
 from web_app.models import Subscribers, Users, Post, Todo
 from flask_login import login_user, current_user, logout_user, login_required
 import secrets
 import os
 from PIL import Image
+import requests, json
+from flask import jsonify
+
+
+@app.route("/rates", methods=["GET", "POST"])
+def exchange():
+    form = RatesForm()
+    if form.validate_on_submit():
+        form.rate.data = form.rate.data.upper()  # make input form uppercase
+        param = {"base": form.base.data, "symbols": form.rate.data}
+        r = requests.get(url="https://api.exchangeratesapi.io/latest?", params=param, timeout=4)
+        data = r.json()
+        currency = data.get('rates', {}).get(form.rate.data)  # currency = data['rates'][form.rate.data]
+        value = form.rate.data  # requested value (e.g. NOK)
+        dt = data['date']
+        base = data['base']
+        return render_template("rates.html", date_now=date_now, title="Exchange Rates",
+                               currency=currency, value=value, dt=dt, base=base, form=form)
+    return render_template("rates.html", date_now=date_now, title="Exchange Rates", form=form)
 
 
 @app.route("/")
@@ -33,7 +52,8 @@ def todo_all():
 def todo_func():
     form = TodoForm()
     if form.validate_on_submit():
-        todo = Todo(comment=form.comment.data, priority=form.priority.data, mail=current_user)  # takes comment and prio + users email
+        todo = Todo(comment=form.comment.data, priority=form.priority.data,
+                    mail=current_user)  # takes comment and prio + users email
         db.session.add(todo)
         db.session.commit()
         flash("Todo created!", "success")
@@ -159,4 +179,3 @@ def about():
 @app.route("/forum")
 def forum():
     return render_template("forum.html", title="forum", date_now=date_now, method=["POST", "GET"])
-
