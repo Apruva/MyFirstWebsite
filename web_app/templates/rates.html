@@ -25,10 +25,8 @@
                 <br><p>{{ form.submit(class="btn btn-outline-info") }}</p>
 
     {% if form.validate_on_submit() %}
-
         <p id="main-p"> Exchange rates for <strong>{{ value }}</strong> is <strong>{{ currency }}</strong>.</p>
         <p id="main-p"> It was last updated at <strong>{{ dt }}</strong> and checked against <strong>{{ base }}</strong>.</p>
-    {% else%}
     {% endif %}
 </form>
 

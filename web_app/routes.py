@@ -6,8 +6,9 @@ from flask_login import login_user, current_user, logout_user, login_required
 import secrets
 import os
 from PIL import Image
-import requests, json
-from flask import jsonify
+import requests
+from datetime import datetime, timedelta
+import time
 
 
 @app.route("/rates", methods=["GET", "POST"])
@@ -17,14 +18,17 @@ def exchange():
         form.rate.data = form.rate.data.upper()  # make input form uppercase
         param = {"base=": form.base.data, "symbols=": form.rate.data}  # apply form input to query param
         r = requests.get(url="https://api.exchangeratesapi.io/latest?", params=param, timeout=4)
-        print(r.status_code)
         data = r.json()
         currency = data.get('rates', {}).get(form.rate.data)  # currency = data['rates'][form.rate.data]
         value = form.rate.data  # requested value (e.g. NOK)
         dt = data['date']
         base = data['base']
-        return render_template("rates.html", date_now=date_now, title="Exchange Rates",
-                               currency=currency, value=value, dt=dt, base=base, form=form)
+        if currency is not None:
+            return render_template("rates.html", date_now=date_now, title="Exchange Rates",
+                                   currency=currency, value=value, dt=dt, base=base, form=form)
+        if currency is None:
+            flash(f'"{form.rate.data}" Is not a valid currency!', 'danger')
+            return redirect(url_for('exchange'))
     return render_template("rates.html", date_now=date_now, title="Exchange Rates", form=form)
 
 
