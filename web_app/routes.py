@@ -15,8 +15,9 @@ def exchange():
     form = RatesForm()
     if form.validate_on_submit():
         form.rate.data = form.rate.data.upper()  # make input form uppercase
-        param = {"base": form.base.data, "symbols": form.rate.data}
+        param = {"base=": form.base.data, "symbols=": form.rate.data}  # apply form input to query param
         r = requests.get(url="https://api.exchangeratesapi.io/latest?", params=param, timeout=4)
+        print(r.status_code)
         data = r.json()
         currency = data.get('rates', {}).get(form.rate.data)  # currency = data['rates'][form.rate.data]
         value = form.rate.data  # requested value (e.g. NOK)
@@ -44,7 +45,7 @@ def all_posts():
 def todo_all():
     if current_user.is_authenticated:
         todos = Todo.query.all()
-        return render_template("all_todos.html", todos=todos, date_now=date_now, title="My Todos")
+        return render_template("all_todos.html", todos=todos, date_now=date_now, title="My Todo's")
 
 
 @app.route("/todo/", methods=["GET", "POST"])

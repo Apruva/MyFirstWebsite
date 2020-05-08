@@ -4,16 +4,14 @@
 {% for post in posts %}
 <p>
     <article>
-          <img class="rounded-circle article-img" src="{{ url_for('static', filename='images/' + post.author.image_file) }}">
-          <div class="media-body">
-            <div class="article-metadata">
-                <br><h2 id="profile"><small>Written by, <strong><em>{{ post.author.username }}</em></strong></small></h2>
-              <small id="profile">Posted on {{ post.date_posted.strftime('%Y-%m-%d') }}</small>
-            </div>
-            <br><h2><a class="article-title" id="profile"> {{ post.title }}</a></h2>
-            <br><p class="article-content" id="profile">{{ post.content }}</p>
-          </div>
-        </article>
+        <img class="rounded-circle article-img" src="{{ url_for('static', filename='images/' + post.author.image_file) }}">
+        <h1 id="post-header"> {{ post.title }} </h1>
+        <div class="article-metadata"><p class="article-content" id="main-post">{{ post.content }}</p>
+        <div class="article-author"><small>Written by, <strong><em>{{ post.author.username }}</em></strong></small></a></h2></div>
+        <small id="main-post">({{ post.date_posted.strftime('%Y-%m-%d') }})</small>
+        </div>
+
+    </article>
 </p>
 {% endfor %}
 
