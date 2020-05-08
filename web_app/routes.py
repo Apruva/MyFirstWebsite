@@ -1,4 +1,6 @@
 from flask import render_template, redirect, request, url_for, flash
+from sqlalchemy import desc
+
 from web_app import app, db, bcrypt, date_now
 from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm, RatesForm, ValidationError
 from web_app.models import Subscribers, Users, Post, Todo
@@ -40,7 +42,7 @@ def home():
 
 @app.route("/posts/")
 def all_posts():
-    posts = Post.query.all()
+    posts = Post.query.order_by(Post.date_posted)
     return render_template("posts.html", date_now=date_now, posts=posts, title="Posts")
 
 
