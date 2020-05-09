@@ -1,16 +1,24 @@
 from flask import render_template, redirect, request, url_for, flash
-from sqlalchemy import desc
-
 from web_app import app, db, bcrypt, date_now
-from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, PostForm, TodoForm, RatesForm, ValidationError
+from web_app.forms import SubForm, RegForm, LogForm, UpdateForm, CalcForm, PostForm, TodoForm, RatesForm, ValidationError
 from web_app.models import Subscribers, Users, Post, Todo
 from flask_login import login_user, current_user, logout_user, login_required
 import secrets
 import os
 from PIL import Image
 import requests
-from datetime import datetime, timedelta
-import time
+
+
+@app.route("/calculator/interest", methods=["GET", "POST"])
+def calc():
+    form = CalcForm()
+    print(form.interest.data)
+    if form.validate_on_submit():
+        print(form.interest.data)
+        result = form.balance.data * (1 + form.interest.data) ** form.years.data
+        round_result = round(result, 2)
+        return render_template("interest.html", form=form, round_result=round_result, date_now=date_now, title="Interest Calculator")
+    return render_template('interest.html', form=form, date_now=date_now, title='Interests Calculator')
 
 
 @app.route("/rates", methods=["GET", "POST"])
@@ -18,6 +26,7 @@ def exchange():
     form = RatesForm()
     if form.validate_on_submit():
         form.rate.data = form.rate.data.upper()  # make input form uppercase
+        form.base.data = form.base.data.upper()
         param = {"base=": form.base.data, "symbols=": form.rate.data}  # apply form input to query param
         r = requests.get(url="https://api.exchangeratesapi.io/latest?", params=param, timeout=4)
         data = r.json()

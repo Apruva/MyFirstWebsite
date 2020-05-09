@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7900e8d9-bbf0-4cdb-8ede-1fdb314f6441" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web_app/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/0bee948ef3aa63b6dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/0fdce744e7787cccdog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/24090e82907c840edog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/261f7d5bfc22bb6bdefault.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/27bf3748a353687bdog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/35e3b6933117ad10dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/45de9ed8cd71cb5fdog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/4c9c4e33f51ceac4dog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/5be1821299127762261f7d5bfc22bb6bdefault.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/67ee5abdbf4f351bdog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/71cf21b713e4b648dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/7a43720fcdb59f25dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/9f378c25a568324bdog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/a2ba3d0099284a85dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/aa69d1880b972da4dog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/aefa610693da2f3edog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/d2aed49ab1e7d72adog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/dce51e732b20152edog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/edce0c0e7966d82bdog_PNG50348 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/static/images/ffe6d8d7dc2c18b8dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/rates.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -48,7 +71,7 @@
       <recent name="C:\PythonProgramming\ToDo\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.routes">
+  <component name="RunManager" selected="Python.test">
     <configuration name="ewew" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyFirstWebsite" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,7 +291,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1588942970671</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="admin panel">
+      <created>1588959215545</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1588959215545</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -282,7 +311,8 @@
     <MESSAGE value="API fix" />
     <MESSAGE value="a" />
     <MESSAGE value="b" />
-    <option name="LAST_COMMIT_MESSAGE" value="b" />
+    <MESSAGE value="admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="97" key="#Notifications" timestamp="1588406102546">
@@ -309,30 +339,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="62" key="#run_(2)/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588069729401" />
-    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588942970212">
+    <state x="516" y="40" key="CommitChangelistDialog2" timestamp="1588959215038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588942970212" />
-    <state width="1893" height="261" key="GridCell.Tab.0.bottom" timestamp="1588937767945">
+    <state x="516" y="40" key="CommitChangelistDialog2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588959215038" />
+    <state width="1893" height="258" key="GridCell.Tab.0.bottom" timestamp="1589036447398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="931" height="328" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
-    <state width="1893" height="261" key="GridCell.Tab.0.bottom/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588937767945" />
-    <state width="1893" height="261" key="GridCell.Tab.0.center" timestamp="1588937767945">
+    <state width="1893" height="258" key="GridCell.Tab.0.bottom/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589036447398" />
+    <state width="1893" height="258" key="GridCell.Tab.0.center" timestamp="1589036447398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="931" height="328" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
-    <state width="1893" height="261" key="GridCell.Tab.0.center/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588937767945" />
-    <state width="1893" height="261" key="GridCell.Tab.0.left" timestamp="1588937767945">
+    <state width="1893" height="258" key="GridCell.Tab.0.center/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589036447398" />
+    <state width="1893" height="258" key="GridCell.Tab.0.left" timestamp="1589036447398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="931" height="328" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
-    <state width="1893" height="261" key="GridCell.Tab.0.left/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588937767945" />
-    <state width="1893" height="261" key="GridCell.Tab.0.right" timestamp="1588937767945">
+    <state width="1893" height="258" key="GridCell.Tab.0.left/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589036447398" />
+    <state width="1893" height="258" key="GridCell.Tab.0.right" timestamp="1589036447398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="931" height="328" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588031337852" />
-    <state width="1893" height="261" key="GridCell.Tab.0.right/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588937767945" />
+    <state width="1893" height="258" key="GridCell.Tab.0.right/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589036447398" />
     <state width="931" height="328" key="GridCell.Tab.1.bottom" timestamp="1588031337852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -361,20 +391,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="623" height="498" key="SwitcherDM/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588335472875" />
-    <state x="567" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1588931477547">
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1589016051186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588021967934" />
-    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588931477547" />
+    <state x="567" y="301" key="com.intellij.ide.util.TipDialog/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589016051186" />
     <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588869557512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588869557512" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1588958703143">
+    <state x="888" y="65" width="974" height="1047" maximized="true" key="dock-window-1" timestamp="1589029204142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1588021480516" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588958703143" />
+    <state x="888" y="65" width="974" height="1047" maximized="true" key="dock-window-1/1920.-191.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589029204142" />
     <state x="1920" y="33" width="1381" height="714" key="dock-window-2" timestamp="1588874873764">
       <screen x="1920" y="-191" width="1920" height="1040" />
     </state>

@@ -12,6 +12,15 @@
 
     <!-- My CSS -->
     <style type="text/css">
+    .container {
+  width: 500px;
+  clear: both;
+}
+
+.container-inp {
+  width: 100%;
+  clear: both;
+}
     #main-body{
        background: #343148;
        margin 0 auto;
@@ -74,7 +83,7 @@
       border: 3px;
       color: black;
       background: white;
-      text-align: center;
+      text-align: left;
 }
     form {
       text-align: center;
@@ -228,12 +237,7 @@ input[type=text] {
         <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
       </li>
       </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('new_post') }}">New Post</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('exchange') }}">Exchange Rates</a>
-      </li>
+
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Options
@@ -242,6 +246,8 @@ input[type=text] {
           <a class="dropdown-item" href="{{ url_for('all_posts') }}">Read Posts</a>
           <a class="dropdown-item" href="{{ url_for('new_post') }}">Create Post</a>
             <a class="dropdown-item" href="{{ url_for('todo_func') }}">My Todo</a>
+            <a class="dropdown-item" href="{{ url_for('calc') }}">Calculator</a>
+            <a class="dropdown-item" href="{{ url_for('exchange') }}">Exchange Rates</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Help</a>
         </div>
@@ -249,15 +255,13 @@ input[type=text] {
 
         {% else %}
      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+        <a class="nav-link" href="{{ url_for('register') }}">Register</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="{{ url_for('subscribe') }}">Subscribe</a>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('exchange') }}">Exchange Rates</a>
       </li>
 
          <li class="nav-item dropdown">
@@ -267,7 +271,9 @@ input[type=text] {
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url_for('all_posts') }}">Read Posts</a>
           <a class="dropdown-item" href="{{ url_for('new_post') }}">Create Post</a>
-            <a class="dropdown-item" href=#>#</a>
+            <a class="dropdown-item" href="{{ url_for('todo_func') }}">My Todo</a>
+            <a class="dropdown-item" href="{{ url_for('calc') }}">Calculator</a>
+            <a class="dropdown-item" href="{{ url_for('exchange') }}">Exchange Rates</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Help</a>
         </div>

@@ -1,4 +1,5 @@
-from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, TextField, DateField, \
+from wtforms import StringField, PasswordField, SubmitField, validators, TextAreaField, DecimalField, TextField, \
+    DateField, \
     IntegerField, SelectMultipleField
 from wtforms.fields.html5 import DateTimeField
 from wtforms.widgets import TextArea
@@ -129,3 +130,19 @@ class RatesForm(FlaskForm):
                                    validators.length(min=3, max=3, message='Must be three characters!')],
                        default='EUR')
     submit = SubmitField('Get Rate')
+
+
+class CalcForm(FlaskForm):
+    balance = IntegerField('Current balance',
+                           validators=[DataRequired(),
+                                       validators.number_range(max=10000000)], default=100000)
+    interest = DecimalField('Interest',
+                            validators=[DataRequired(message='Field must be decimal! '
+                                                             'Make sure that dot is used instead of comma'),
+                                        validators.number_range(max=10)], default=0.10)
+    years = IntegerField('Amount of years',
+                         validators=[DataRequired(),
+                                     validators.number_range(max=10)], default=10)
+    submit = SubmitField('Calculate')
+
+

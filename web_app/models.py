@@ -1,4 +1,4 @@
-from web_app import db, login_manager, admin, ModelView
+from web_app import db, login_manager
 from datetime import datetime
 from flask_login import UserMixin
 
@@ -15,9 +15,6 @@ class Subscribers(db.Model):
 
     def __repr__(self):
         return f"Subscribers('{self.email}')"
-
-
-admin.add_view(ModelView(Subscribers, db.session))
 
 
 class Users(db.Model, UserMixin):
@@ -42,7 +39,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
-        return f"Post('{self.title}', '{self.date_posted}')"
+        return f"Post('{self.title}', '{self.date_posted}'"
 
 
 class Todo(db.Model):
@@ -54,5 +51,6 @@ class Todo(db.Model):
 
     def __repr__(self):
         return f"Todo('{self.comment}', '{self.priority}')"
+
 
 

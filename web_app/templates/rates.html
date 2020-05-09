@@ -3,11 +3,11 @@
 
 {% block form %}
 <form method="POST" id="form-todo" action="">
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-warning" role="alert">
             {% if current_user.is_authenticated %}
-            Welcome {{ current_user.mail }}!<br>Get Live Exchange Rates</div>
+            Welcome {{ current_user.mail }}!<br>Get Live Exchange Rates
             {% else %}
-            <br>Get Live Exchange Rates</div>
+            Get Live Exchange Rates</div>
             {% endif %}
             {{ form.hidden_tag() }}
 
